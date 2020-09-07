@@ -6,26 +6,39 @@
     <style>
       body {
         height: 300vh; /* viewport height value(100)=100% */
-        margin: 20px;
+        margin: 50px;
       }
       span {
-        background-color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
       }
-      span:nth-child(3n) {
-        background-color: green;
+      p span {
+        color: white;
+      }
+      /* > direct childrens */
+      div > span {
+        text-decoration: underline;
+      }
+      /* + first selector next selector*/
+      p + span {
+        font-size: 50px;
       }
     </style>
   </head>
 
   <body>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
+    <div>
+      <span>hello</span>
+      <span>hello</span>
+      <span>hello</span>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque optio
+        dolorem. <span>inside</span>
+      </p>
+      <span>hello</span>
+      <span>hello</span>
+      <span>hello</span>
+    </div>
   </body>
 </html>
