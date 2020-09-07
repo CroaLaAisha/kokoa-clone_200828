@@ -24,21 +24,30 @@
       p + span {
         font-size: 50px;
       }
+      /* ~ span이 p의 형제이지만 바로 뒤에 있지않는 경우 */
+      p ~ span {
+        font-size: 20px;
+        color: red;
+      }
+      input {
+        border: 5px solid blue;
+      }
+      input:required {
+        border-color: tomato;
+      }
+      input[placeholder*="name"] {
+        background-color: pink;
+      }
     </style>
   </head>
 
   <body>
     <div>
-      <span>hello</span>
-      <span>hello</span>
-      <span>hello</span>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque optio
-        dolorem. <span>inside</span>
-      </p>
-      <span>hello</span>
-      <span>hello</span>
-      <span>hello</span>
+      <form action="">
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
     </div>
   </body>
 </html>
