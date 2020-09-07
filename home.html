@@ -8,46 +8,49 @@
         height: 300vh; /* viewport height value(100)=100% */
         margin: 50px;
       }
-      span {
-        background-color: yellowgreen;
-        padding: 5px;
+      button {
+        width: 100px;
+        height: 50px;
+        border: 5px solid green;
         border-radius: 10px;
+        background-color: greenyellow;
       }
-      p span {
-        color: white;
+      /* 마우스가 위로 올라온상태 */
+      button:hover {
+        background-color: blue;
       }
-      /* > direct childrens */
-      div > span {
-        text-decoration: underline;
+      /* 마우스로 누른상태 */
+      button:active {
+        background-color: tomato;
       }
-      /* + first selector next selector*/
-      p + span {
-        font-size: 50px;
-      }
-      /* ~ span이 p의 형제이지만 바로 뒤에 있지않는 경우 */
-      p ~ span {
-        font-size: 20px;
-        color: red;
-      }
-      input {
-        border: 5px solid blue;
-      }
-      input:required {
-        border-color: tomato;
-      }
-      input[placeholder*="name"] {
+      /* 키보드로 선택된상태 */
+      input:focus {
         background-color: pink;
+      }
+      form {
+        border: 5px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      /* 자식중 하나가 focused 상태일때 */
+      form:focus-within {
+        background-color: red;
+      }
+
+      form:hover input:focus {
+        background-color: sienna;
       }
     </style>
   </head>
 
   <body>
-    <div>
-      <form action="">
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
-      </form>
-    </div>
+    <form action="">
+      <div>
+        <input type="text" />
+      </div>
+      <input type="text" />
+      <input type="text" />
+    </form>
   </body>
 </html>
