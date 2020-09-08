@@ -4,6 +4,10 @@
     <title>Home - My First website.</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
+      :root {
+        --main-color: yellow;
+        --default-border: 5px solid var(----main-color);
+      }
       body {
         height: 300vh; /* viewport height value(100)=100% */
         margin: 50px;
@@ -13,15 +17,18 @@
         padding: 5px;
         border-radius: 10px;
       }
-      p::first-letter {
+      p {
+        background-color: var(--main-color);
         color: white;
-        font-size: 30px;
-        background-color: yellowgreen;
       }
-      p::first-line {
-        color: red;
-        font-size: 30px;
-        background-color: blue;
+      a {
+        color: var(--main-color);
+      }
+      div {
+        background-color: red;
+        width: 100px;
+        height: 60px;
+        border: var(--default-border);
       }
     </style>
   </head>
@@ -33,5 +40,8 @@
       pariatur enim velit nostrum aspernatur minus eligendi laborum asperiores
       debitis voluptates!
     </p>
+    <div>
+      <a href="#">website</a>
+    </div>
   </body>
 </html>
