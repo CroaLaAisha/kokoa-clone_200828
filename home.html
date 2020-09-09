@@ -1,47 +1,28 @@
 <!DOCTYPE html>
 <html lang="kr">
   <head>
-    <title>Home - My First website.</title>
-    <link href="styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <title>The Nico Times</title>
     <style>
-      :root {
-        --main-color: yellow;
-        --default-border: 5px solid var(----main-color);
-      }
-      body {
-        height: 300vh; /* viewport height value(100)=100% */
-        margin: 50px;
-      }
-      span {
-        background-color: pink;
-        padding: 5px;
-        border-radius: 10px;
-      }
-      p {
-        background-color: var(--main-color);
-        color: white;
-      }
       a {
-        color: var(--main-color);
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        transition: all 2s ease-in-out;
       }
-      div {
-        background-color: red;
-        width: 100px;
-        height: 60px;
-        border: var(--default-border);
+      a:hover {
+        color: tomato;
+        background-color: wheat;
+        font-size: 33px;
+        border-radius: 20px;
       }
     </style>
   </head>
 
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-      architecto nemo, similique expedita sit ullam doloremque commodi hic quis
-      pariatur enim velit nostrum aspernatur minus eligendi laborum asperiores
-      debitis voluptates!
-    </p>
-    <div>
-      <a href="#">website</a>
-    </div>
+    <a href="#">Go Home</a>
   </body>
 </html>
