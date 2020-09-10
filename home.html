@@ -4,24 +4,20 @@
     <meta charset="UTF-8" />
     <title>The Nico Times</title>
     <style>
-      a {
-        color: wheat;
-        background-color: tomato;
-        text-decoration: none;
-        padding: 3px 5px;
-        border-radius: 5px;
-        font-size: 55px;
-        transition: background-color 1s cubic-bezier(0.6, 0, 0.735, 0.045);
+      img {
+        width: 300px;
+        height: 300px;
+        border: 5px solid black;
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out;
       }
-      a:focus {
-        color: tomato;
-        background-color: wheat;
-        border-radius: 20px;
+      img:hover {
+        transform: matrix(1, 2, 3, 4, 5, 6);
       }
     </style>
   </head>
 
   <body>
-    <a href="#">Go Home</a>
+    <img src="cat.jpg" alt="" />
   </body>
 </html>
