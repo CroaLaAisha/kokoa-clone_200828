@@ -17,7 +17,7 @@
         height: 200px;
       }
 
-      @media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {
+      @media screen and (min-device-width: 600px) and (max-device-width: 1200px) and (orientation: portrait) {
         div {
           background-color: turquoise;
         }
@@ -28,6 +28,11 @@
       @media screen and (orientation: landscape) {
         span {
           display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: red;
         }
       }
     </style>
