@@ -1,2 +1,3 @@
-# kokoa-clone_200828
- 
+# Kokoa Clone 200828
+
+CSS got so much better!
