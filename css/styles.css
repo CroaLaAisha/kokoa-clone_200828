@@ -29,14 +29,18 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
+  color: tomato;
 }
 
 #login-form input {
   margin-bottom: 25px;
   padding: 15px 0px;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 18px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 #login-form input::placeholder {
@@ -44,4 +48,20 @@ body {
 }
 #login-form input:focus {
   border-color: var(--yellow);
+}
+#login-form input[type="submit"] {
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+#login-form input[type="submit"]:hover {
+  background-color: var(--yellow);
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
 }
