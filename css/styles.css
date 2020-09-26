@@ -7,6 +7,7 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
 
 /* screens */
 @import "screens/login.css";
@@ -20,26 +21,4 @@ body {
 
 .main-screen {
   padding: 0px var(--horizontal-space);
-}
-
-.main-screen .user-component__column:last-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-
-  font-size: 13px;
-}
-.main-screen .user-component__column:last-child span:last-child {
-  margin-top: 10px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background-color: tomato;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
 }
