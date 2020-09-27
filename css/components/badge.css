@@ -11,3 +11,24 @@
   color: white;
   font-weight: 600;
 }
+
+.badge-pin {
+  position: relative;
+}
+
+.badge-small {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  right: -10px;
+  top: 0px;
+}
+.badge-RT {
+  top: -16px;
+  right: -12px;
+}
+
+.badge-small.badge-RT {
+  top: -8px;
+  right: -6px;
+}

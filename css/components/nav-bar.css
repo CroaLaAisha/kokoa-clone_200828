@@ -20,13 +20,4 @@
 
 .nav__notification {
   position: absolute;
-  left: 18px;
-  bottom: 18px;
-}
-
-.notification-small {
-  width: 5px;
-  height: 5px;
-  left: 32px;
-  bottom: 26px;
 }
