@@ -1,0 +1,26 @@
+.more-screen .user-component .fa-exclamation-circle {
+  color: tomato;
+  font-size: 14px;
+}
+
+.more-screen .icon-row {
+  margin-top: 25px;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.more-screen .icon-row__icon {
+  width: 25%;
+}
+.more-screen .icon-row__icon:nth-child(n + 5) {
+  margin-top: 25px;
+}
+
+.more-suggestions {
+  margin-top: 50px;
+  border-top: var(--main-border);
+  padding-top: 40px;
+}
+
+.more-suggestions__title {
+  margin-bottom: 25px;
+}
