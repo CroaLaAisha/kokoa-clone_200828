@@ -1,7 +1,6 @@
 .user-component {
   justify-content: space-between;
   transition: all 0.2s;
-  width: 100%;
 }
 .user-component:hover {
   background-color: rgba(0, 0, 0, 0.05);

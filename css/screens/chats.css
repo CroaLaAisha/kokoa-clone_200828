@@ -1,8 +1,8 @@
-.main-chat .user-component {
+.main-chats .user-component {
   justify-content: space-between;
   padding: 10px 0px;
   border-top: 2px solid rgba(0, 0, 0, 0.15);
 }
-.main-chat .user-component:last-child {
+.main-chats > a:last-child .user-component {
   border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 }

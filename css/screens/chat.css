@@ -213,5 +213,16 @@
   transition: all 1s ease-in-out;
 }
 
-.reply input:active {
+@keyframes UpKeyborad {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(-250px);
+  }
+}
+
+.replykeyboard:focus-within,
+.replykeyboard:active {
+  animation: UpKeyborad 1s ease forwards;
 }
