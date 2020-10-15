@@ -38,6 +38,17 @@
   /* animation: fadeIn 1s ease;  */
 }
 
+@keyframes fadeInTopToBottom {
+  from {
+    transform: translateY(-100px) scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .chat__timestamp {
   color: white;
   background-color: #92a4b2;
@@ -45,6 +56,8 @@
   font-size: 14px;
   border-radius: 25px;
   margin-bottom: 25px;
+  animation: fadeInTopToBottom 1s ease;
+  will-change: transform, opacity;
 }
 
 @keyframes fadeInLeftToRight {
@@ -135,7 +148,7 @@
   align-items: center;
   padding: 10px 25px;
 
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
