@@ -89,12 +89,15 @@
   display: block;
   margin-bottom: 8px;
 }
-
+.message-row__content {
+  width: 90%;
+}
 .message__info {
   display: flex;
   align-items: flex-end;
 }
 .message__bubble {
+  width: auto;
   background-color: white;
   padding: 8px 13px;
   border-radius: 15px;
